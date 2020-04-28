@@ -1,0 +1,107 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: $fuente-principal;
+}
+.container{
+     @include gradiente($hover3,$primario,url(../img/fondo.jpg));
+     @include imgproc;
+     width: 100vw;
+     height: 100vh;
+     display: flex;
+     .login-container{
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $blanco;
+     }
+     .login-description{
+          display: none;
+          height: 100%;
+
+     }
+     .login{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+     }
+     .welcome{
+          text-align: center;
+          width: 80%;
+     }
+     .welcome-text{
+          display: flex;
+          flex-direction: column;
+          text-transform: uppercase;
+          font-family: $fuente-terciaria;
+          color: $tono-bajo;
+          font-size:15px;
+          letter-spacing: 5px;
+     }
+     .title-logo{
+          font-size: 50px;
+          font-family: $fuente-corrida;
+          text-transform: capitalize;
+          color: $primario;
+          letter-spacing: 0;
+          i{
+               margin-left: 15px;
+               font-size: 40px;
+          }
+     }
+     .welcome-description{
+          color: $tono-bajo;
+          margin: 5px 0 10px 0;
+     }
+     @include tablet{
+          .login-description{
+               display: block;
+          }
+     }
+}
+.login-box{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+.form-login{
+     width: 100%;
+     text-align: center;
+     .input-group{
+          width: 100%;
+          display: flex;
+          justify-content: center;
+     }
+     .input-login{
+          width: 65%;
+          padding: 8px;
+          border: solid 0.8px $tono-bajo;
+          border-left: 0;
+          border-radius: 0 20px 20px 0;
+          font-family: $fuente-secundaria;
+          font-size: 18px;
+          color: $primario;
+     }
+     .icon-login{
+          font-size: 20px;
+          color: $tono-bajo;
+          border: solid 0.8px $tono-bajo;
+          border-right: 0;
+          width: 20px;
+          border-radius: 20px 0 0 20px;
+          width: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+     }
+     .btn-login{
+          @include boton($primario,$tono-bajo,$blanco);
+          border-radius: 25px;
+          width: 73%;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+     }
+}

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhai 2", cursive;
+}
+
+.container {
+  background: linear-gradient(to right, rgba(180, 179, 179, 0.479) 15%, #024959c2), url(../img/fondo.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.container .login-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.container .login-description {
+  display: none;
+  height: 100%;
+}
+.container .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .welcome {
+  text-align: center;
+  width: 80%;
+}
+.container .welcome-text {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  color: #024959a1;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+.container .title-logo {
+  font-size: 50px;
+  font-family: "Satisfy", cursive;
+  text-transform: capitalize;
+  color: #024959c2;
+  letter-spacing: 0;
+}
+.container .title-logo i {
+  margin-left: 15px;
+  font-size: 40px;
+}
+.container .welcome-description {
+  color: #024959a1;
+  margin: 5px 0 10px 0;
+}
+@media only screen and (min-width: 768px) {
+  .container .login-description {
+    display: block;
+  }
+}
+
+.login-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-login {
+  width: 100%;
+  text-align: center;
+}
+.form-login .input-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form-login .input-login {
+  width: 65%;
+  padding: 8px;
+  border: solid 0.8px #024959a1;
+  border-left: 0;
+  border-radius: 0 20px 20px 0;
+  font-family: "Bree Serif", cursive;
+  font-size: 18px;
+  color: #024959c2;
+}
+.form-login .icon-login {
+  font-size: 20px;
+  color: #024959a1;
+  border: solid 0.8px #024959a1;
+  border-right: 0;
+  width: 20px;
+  border-radius: 20px 0 0 20px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-login .btn-login {
+  display: inline-block;
+  background: #024959c2;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 25px;
+  width: 73%;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.form-login .btn-login:hover {
+  background: #024959a1;
+}
+
+/*# sourceMappingURL=app.css.map */

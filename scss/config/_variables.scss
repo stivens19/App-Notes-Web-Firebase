@@ -1,0 +1,23 @@
+//Colores de la pagina.
+$primario:#024959c2;
+$secundario:rgba(45, 151, 26, 0.472);
+$terciario:rgba(4, 142, 206, 0.89);
+$cuaternario:rgba(199, 199, 199, 0.315);
+$tono-bajo:#024959a1;
+$hover3:rgba(180, 179, 179, 0.479);
+$blanco:#fff;
+//Fuentes
+$fuente-principal:'Baloo Bhai 2', cursive;
+$fuente-secundaria:'Bree Serif', cursive;
+$fuente-terciaria:'Nunito', sans-serif;
+$fuente-corrida:'Satisfy', cursive;
+
+// Tamaño de Media Queries
+$telefono : 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+
+//para flex
+$around:space-around;
+$between:space-between;
