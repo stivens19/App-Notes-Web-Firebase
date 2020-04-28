@@ -5,7 +5,7 @@
      font-family: $fuente-principal;
 }
 .container{
-     @include gradiente($hover3,$primario,url(../img/fondo.jpg));
+     @include gradiente($terciario,$primario,url(../img/fondo.jpg));
      @include imgproc;
      width: 100vw;
      height: 100vh;
@@ -15,7 +15,26 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background: $blanco;
+         
+     }
+     .logo{
+          color:$terciario;
+          text-shadow: 10px 4px 5px $primario;
+          font-size: 80px;
+     }
+     .title{
+          color: $terciario;
+          font-family: $fuente-corrida;
+          font-size: 52px;
+          text-shadow: 10px 4px 5px $secundario;
+     }
+     .description-text{
+          margin-top: 20px;
+          font-size: 22px;
+          font-family: $fuente-terciaria;
+          color: $secundario;
+          font-weight: bold;
+          text-shadow: 10px 4px 5px $blanco2;
      }
      .login-description{
           display: none;
@@ -56,8 +75,17 @@
           margin: 5px 0 10px 0;
      }
      @include tablet{
+          .login-container{
+               background: $blanco;
+          }
           .login-description{
-               display: block;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          .description{
+               width: 60%;
+               text-align: center;
           }
      }
 }

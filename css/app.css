@@ -6,7 +6,7 @@
 }
 
 .container {
-  background: linear-gradient(to right, rgba(180, 179, 179, 0.479) 15%, #024959c2), url(../img/fondo.jpg);
+  background: linear-gradient(to right, rgba(228, 228, 231, 0.918) 15%, #024959c2), url(../img/fondo.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -20,7 +20,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+}
+.container .logo {
+  color: rgba(228, 228, 231, 0.918);
+  text-shadow: 10px 4px 5px #024959c2;
+  font-size: 80px;
+}
+.container .title {
+  color: rgba(228, 228, 231, 0.918);
+  font-family: "Satisfy", cursive;
+  font-size: 52px;
+  text-shadow: 10px 4px 5px rgba(2, 17, 42, 0.63);
+}
+.container .description-text {
+  margin-top: 20px;
+  font-size: 22px;
+  font-family: "Nunito", sans-serif;
+  color: rgba(2, 17, 42, 0.63);
+  font-weight: bold;
+  text-shadow: 10px 4px 5px rgba(255, 255, 255, 0.239);
 }
 .container .login-description {
   display: none;
@@ -60,8 +78,17 @@
   margin: 5px 0 10px 0;
 }
 @media only screen and (min-width: 768px) {
+  .container .login-container {
+    background: #fff;
+  }
   .container .login-description {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .description {
+    width: 60%;
+    text-align: center;
   }
 }
 
